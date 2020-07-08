@@ -13,7 +13,8 @@ if not os.path.exists(DATA_DIR):
 if not os.path.exists(os.path.join(DATA_DIR, 'human_im2avatar')):
   www = 'https://www.dropbox.com/s/imgiu8xump2zlvm/human_im2avatar.tar.gz'
   zipfile = os.path.basename(www)
-  os.system('wget %s; tar -xzf %s' % (www, zipfile))
+  os.system('wget %s' % (www))
+  os.system('tar -xzf %s' % (zipfile))
   os.system('move %s %s' % (zipfile[:zipfile.find('.')], DATA_DIR))
   os.system('del %s' % (zipfile))
 
