@@ -19,7 +19,7 @@ tf.app.flags.DEFINE_string('data_list_path', './data_list',
                           """The path containing data lists.""")
 
 tf.app.flags.DEFINE_integer('train_epochs', 501, """Training epochs.""")
-tf.app.flags.DEFINE_integer('batch_size', 60, """Batch size.""")
+tf.app.flags.DEFINE_integer('batch_size', 30, """Batch size.""")
 tf.app.flags.DEFINE_integer('gpu', 0, """""")
 tf.app.flags.DEFINE_float('learning_rate', 0.0003, """""")
 tf.app.flags.DEFINE_float('wd', 0.00001, """""")
