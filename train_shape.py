@@ -45,10 +45,11 @@ BN_DECAY_CLIP = 0.99
 os.environ["CUDA_VISIBLE_DEVICES"] = str(GPU_INDEX)
 
 TRAIN_DIR = os.path.join(FLAGS.train_dir, FLAGS.cat_id)
-if not os.path.exists(TRAIN_DIR): 
+if not os.path.exists(TRAIN_DIR):
   os.makedirs(TRAIN_DIR)
+
 LOG_FOUT = open(os.path.join(TRAIN_DIR, 'log_train.txt'), 'w')
-LOG_FOUT.write(str(tf.flags._global_parser.parse_args())+'\n')
+#LOG_FOUT.write(str(tf.flags._global_parser.parse_args())+'\n')
 
 def log_string(out_str):
   LOG_FOUT.write(out_str+'\n')
