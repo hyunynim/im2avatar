@@ -14,8 +14,8 @@ if not os.path.exists(os.path.join(DATA_DIR, 'human_im2avatar')):
   www = 'https://www.dropbox.com/s/imgiu8xump2zlvm/human_im2avatar.tar.gz'
   zipfile = os.path.basename(www)
   os.system('wget %s; tar -xzf %s' % (www, zipfile))
-  os.system('mv %s %s' % (zipfile[:zipfile.find('.')], DATA_DIR))
-  os.system('rm %s' % (zipfile))
+  os.system('move %s %s' % (zipfile[:zipfile.find('.')], DATA_DIR))
+  os.system('del %s' % (zipfile))
 
 class Dataset(object):
   def __init__(self, base_path, data_list_path):
