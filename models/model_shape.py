@@ -148,10 +148,10 @@ if __name__=='__main__':
     pred = get_model(im_pl, tf.constant(True))
     loss = get_MSFE_cross_entropy_loss(pred, vol_pl)
     
-    print im_pl
-    print vol_pl
-    print pred
-    print loss
+    print(im_pl)
+    print(vol_pl)
+    print(pred)
+    print(loss)
 
 
 

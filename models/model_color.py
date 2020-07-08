@@ -179,11 +179,11 @@ if __name__=='__main__':
 
     img_pl, vol_clr_pl, vol_flow_pl = placeholder_inputs(batch_size, im_dim, vol_dim)
     pred_reg_clr, pred_conf, pred_flow, pred_blended_clr = get_model(img_pl, tf.constant(True))
-    print pred_reg_clr
-    print pred_conf
-    print pred_flow
-    print pred_blended_clr
+    print(pred_reg_clr)
+    print(pred_conf)
+    print(pred_flow)
+    print(pred_blended_clr)
 
     loss = get_loss(pred_reg_clr, pred_blended_clr, vol_clr_pl, pred_flow, vol_flow_pl)
-    print loss
+    print(loss)
 
