@@ -76,7 +76,7 @@ def inference(dataset_):
                 dtype='float32')
         h5_fout.close()
 
-        print batch_idx, save_path_name
+        print(batch_idx, save_path_name)
 
 def main():
   test_dataset = dataset.Dataset(base_path=FLAGS.base_dir, 
