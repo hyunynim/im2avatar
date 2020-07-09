@@ -55,10 +55,10 @@ for id_ in ids:
     total_iou += tmp_iou
     view_ious[idx] += tmp_iou
 
-    print "<Instance {}> iou: {}".format(count, tmp_iou)
+    print("<Instance {}> iou: {}".format(count, tmp_iou))
   count += 1
 
  
-print "avg iou: {}".format(total_iou / float(count) / 12.0)
+print("avg iou: {}".format(total_iou / float(count) / 12.0))
 for i in range(12):
-  print "view iou {}: {}".format(i, view_ious[i] / float(count))
+  print("view iou {}: {}".format(i, view_ious[i] / float(count)))

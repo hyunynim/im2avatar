@@ -143,12 +143,12 @@ for id_ in ids:
     avg_psnr_ycc_tmp = 20*np.log10(255.0) - 10*np.log10(avg_mse_ycc_tmp)
     avg_psnr_ycc += avg_psnr_ycc_tmp
 
-    print "<Instance {}> psnr_rgb: {} psnr_ycc: {}".format(count / len(pred_shapes_paths), avg_psnr_rgb_tmp, avg_psnr_ycc_tmp)
+    print("<Instance {}> psnr_rgb: {} psnr_ycc: {}".format(count / len(pred_shapes_paths), avg_psnr_rgb_tmp, avg_psnr_ycc_tmp))
 
     count += 1
 
-print "Avg psnr rgb: {}".format(avg_psnr_rgb / float(count) )
-print "Avg psnr ycc: {}".format(avg_psnr_ycc / float(count) )
+print("Avg psnr rgb: {}".format(avg_psnr_rgb / float(count) ))
+print("Avg psnr ycc: {}".format(avg_psnr_ycc / float(count) ))
 
 
 

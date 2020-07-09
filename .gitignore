@@ -10,3 +10,5 @@
 *.index
 *.data-00000-of-00001
 train_shape/02958343/trained_models/checkpoint
+train_color/02958343/trained_models/checkpoint
+train_color/02958343/trained_models/checkpoint
