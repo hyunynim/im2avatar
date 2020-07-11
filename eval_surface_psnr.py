@@ -148,16 +148,4 @@ for id_ in ids:
     count += 1
 
 print("Avg psnr rgb: {}".format(avg_psnr_rgb / float(count) ))
-print("Avg psnr ycc: {}".format(avg_psnr_ycc / float(count) ))
-
-
-
-
-
-
-
-
-
-
-
-
+print("Avg psnr ycc: {}".format(avg_psnr_ycc / float(count)
