@@ -130,8 +130,6 @@ for id_ in ids:
         # # # rgb
         mse_rgb_tmp = np.sum(np.square(clr_pred - clr_gt), axis=0)
 
-        sp.misc.imsave(mse_rgb_tmp)
-        
         # # # ycc
         clr_pred_ycc = rgb2ycc(clr_pred)
         clr_gt_ycc = rgb2ycc(clr_gt)
